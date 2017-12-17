@@ -3,7 +3,7 @@
 <head>
 	<script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
 	<meta charset="UTF-8">
-	<title>test7</title>
+	<title>test9</title>
 </head>
 <body>
 	<h1>h1</h1>
@@ -18,8 +18,14 @@
 	<a href="https://www.w3schools.com/html"></a>
 	<a href="htmlbook.ru"></a>
 	<a href="ru.html.net "></a>
+	<button id="button"><div id="counter">0</div></button>
+	
 	<script type="text/javascript">
-		
+		$(document).ready(function() {
+            $('#button').click(function() {
+                $('#counter').html(+$('#counter').html()+1);
+            });
+        });
 	</script>
 </body>
 </html>
